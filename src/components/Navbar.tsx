@@ -10,13 +10,14 @@ export default function Navbar() {
     const pathname = usePathname();
     return (
         <>
-            <nav className="flex justify-between items-center text-[0.7rem] md:-mt-3 pl-2 md:pl-5 md:text-xl">
+            <nav className="flex justify-between items-center text-[0.7rem] md:mt-2 pl-2 md:pl-5 md:text-xl">
                 <Link href="/">
                     <Image
-                        src="https://res.cloudinary.com/dfhj4i9hd/image/upload/v1721929345/CSI%20Website/logo_f1pruv.jpg"
+                        src="/Hero/logo.jpg"
                         alt="Logo"
                         width={130}
                         height={130}
+                        className="object-contain"
                     />
                 </Link>
                 <div className="flex items-center  space-x-4">
@@ -56,19 +57,7 @@ export default function Navbar() {
                                 }
                             </div>
                         </Link>
-                        <Link href="/gallery">
-                            <div
-                                className={
-                                    pathname === "/gallery"
-                                        ? ""
-                                        : "text-gray-400"
-                                }
-                            >
-                                {
-                                    pathname === "/gallery" ? "GALLERY" : "GALLERY"
-                                }
-                            </div>
-                        </Link>
+                        
                         <Link href="/about">
                             <div
                                 className={
@@ -83,20 +72,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="">
-                    <div className="pl-2 z-10 w-8/12 items-center justify-center">
-                        <Link
-                            target="_blank"
-                            rel="noopener nonreferrer"
-                            href="https://drive.google.com/file/d/1vVOrrGA8Mlr0lUY0wBkKG12Pt9ZaQX7X/view"
-                        >
-                            <Button
-                                className="text-[0.7rem] md:text-lg"
-                                containerClassName="w-20 lg:w-40 lg:h-14 mx-2"
-                            >
-                                BROCHURE
-                            </Button>
-                        </Link>
-                    </div>
+                    
                 </div>
             </nav>
         </>

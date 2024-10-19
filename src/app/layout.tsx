@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-backgroud";
+import { BackgroundBeamsWithCollisionDemo } from "@/components/landingPage/BackgroundBeamsWithCollisionDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       <div className="fixed inset-0 z-0">
           <ShootingStars/>
           <StarsBackground starDensity={0.0004}/>
+          <BackgroundBeamsWithCollisionDemo/>
         </div>
       <div className="relative z-10">
           <Navbar/>
