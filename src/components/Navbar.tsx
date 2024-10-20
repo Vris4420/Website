@@ -77,15 +77,6 @@ export default function Navbar() {
                 </div>
                 <div className=" mr-[5%]">
                     <Link href="/pages/results">
-                        {/* <div
-                                className={
-                                    pathname === "/results" ? "" : "text-gray-400"
-                                }
-                            >
-                                {
-                                    pathname === "/results" ? "RESULTS" : "RESULTS"
-                                }
-                            </div> */}
                         <Shimmer />
                     </Link>
                 </div>

@@ -14,10 +14,6 @@ export default function Home() {
                     <div>
                         <About />
                     </div>
-
-                    <div className="mt-24 mb-28">
-                        <AppleCardsCarouselDemo/>
-                    </div>
                 </div>
                 <div className="mt-16">
                     <WobbleCardDemo/>

@@ -82,6 +82,11 @@ function Footer() {
                 &copy; {new Date().getFullYear()} IETE - MAIT. All rights
                 reserved.
             </div>
+            <hr className="border-t border-gray-700 my-6" />
+
+            <div className="text-center text-sm">
+                Made with &hearts; by Vrishank Sharma & Ansh Tiwari
+            </div>
         </footer>
     );
 }
