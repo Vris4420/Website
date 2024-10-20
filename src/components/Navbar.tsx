@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Shimmer from "./ui/shimmer";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -26,9 +27,7 @@ export default function Navbar() {
                                     pathname === "/" ? "" : "text-gray-400"
                                 } hidden md:block`}
                             >
-                                {
-                                    pathname === "/" ? "HOME" : "HOME"
-                                }
+                                {pathname === "/" ? "HOME" : "HOME"}
                             </div>
                         </Link>
                         <Link href="/team">
@@ -37,9 +36,7 @@ export default function Navbar() {
                                     pathname === "/team" ? "" : "text-gray-400"
                                 }
                             >
-                                {
-                                    pathname === "/team" ? "TEAM" : "TEAM"
-                                }
+                                {pathname === "/team" ? "TEAM" : "TEAM"}
                             </div>
                         </Link>
                         <Link href="/events">
@@ -50,9 +47,7 @@ export default function Navbar() {
                                         : "text-gray-400"
                                 }
                             >
-                                {
-                                    pathname === "/events" ? "EVENTS" : "EVENTS"
-                                }
+                                {pathname === "/events" ? "EVENTS" : "EVENTS"}
                             </div>
                         </Link>
                         <Link href="/projects">
@@ -63,27 +58,36 @@ export default function Navbar() {
                                         : "text-gray-400"
                                 }
                             >
-                                {
-                                    pathname === "/projects" ? "PROJECTS" : "PROJECTS"
-                                }
+                                {pathname === "/projects"
+                                    ? "PROJECTS"
+                                    : "PROJECTS"}
                             </div>
                         </Link>
-                        
+
                         <Link href="/about">
                             <div
                                 className={
                                     pathname === "/about" ? "" : "text-gray-400"
                                 }
                             >
-                                {
-                                    pathname === "/about" ? "ABOUT" : "ABOUT"
-                                }
+                                {pathname === "/about" ? "ABOUT" : "ABOUT"}
                             </div>
                         </Link>
                     </div>
                 </div>
-                <div className="">
-                    
+                <div className=" mr-[5%]">
+                    <Link href="/pages/results">
+                        {/* <div
+                                className={
+                                    pathname === "/results" ? "" : "text-gray-400"
+                                }
+                            >
+                                {
+                                    pathname === "/results" ? "RESULTS" : "RESULTS"
+                                }
+                            </div> */}
+                        <Shimmer />
+                    </Link>
                 </div>
             </nav>
         </>
