@@ -1,26 +1,24 @@
 import React from "react";
 import Image from "next/image";
+import Spline from '@splinetool/react-spline/next';
 
 const HeroSection = () => {
     return (
-        <section className="relative w-[95%] h-screen overflow-hidden mt-[-2%] border rounded-lg  ">
-            {/* Background video */}
-            <video
-                className="absolute top-0 left-0 w-full h-full object-cover"
-                autoPlay
-                loop
-                muted
-                playsInline
-            >
-                <source src="/Hero/HeroVid.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
-            {/* Overlay */}
+        <section className="relative w-[95%] h-screen overflow-hidden mt-[-2%]">
+            {/* Overlay for the background */}
             <div className="absolute inset-0 bg-black opacity-40"></div>
 
+            {/* Spline Component */}
+            <Spline
+                scene="https://prod.spline.design/JiFhMQ4I1hqBxQGn/scene.splinecode" 
+                className="absolute inset-0 z-0"
+            />
+
+            {/* Black strip to hide "Built with Spline" */}
+            <div className="absolute bottom-0 left-0 w-full h-16 bg-black z-10"></div> {/* Added black strip */}
+
             {/* Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
                 <h1 className="text-5xl md:text-7xl font-bold mb-4">
                     IETE MAIT
                 </h1>
