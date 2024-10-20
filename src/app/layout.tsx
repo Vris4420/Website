@@ -3,10 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-backgroud";
+
 import { BackgroundBeamsWithCollisionDemo } from "@/components/landingPage/BackgroundBeamsWithCollisionDemo";
-import { DotPatternDemo } from "@/components/landingPage/DotPatternDemo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +23,6 @@ export default function RootLayout({
       <body className={`bg-black ${inter.className}`}>
       <div className="fixed inset-0 z-0">
           <BackgroundBeamsWithCollisionDemo/>
-          <DotPatternDemo/>
         </div>
       <div className="relative z-10">
           <Navbar/>

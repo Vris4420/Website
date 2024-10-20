@@ -57,6 +57,19 @@ export default function Navbar() {
                                 }
                             </div>
                         </Link>
+                        <Link href="/projects">
+                            <div
+                                className={
+                                    pathname === "/projects"
+                                        ? ""
+                                        : "text-gray-400"
+                                }
+                            >
+                                {
+                                    pathname === "/projects" ? "PROJECTS" : "PROJECTS"
+                                }
+                            </div>
+                        </Link>
                         
                         <Link href="/about">
                             <div
