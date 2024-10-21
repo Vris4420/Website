@@ -75,6 +75,9 @@ const page = () => {
           <li>Priyanshu Pradeep - 2nd</li>
           <li>Vibhav Kapoor - 2nd</li>
           <li>Hardik Sharma - 2nd</li>
+          <li>Pari Goel - 1st</li>
+          <li>Melvin Joseph - 1st</li>
+          <li>Sanskaar Thukral - 3rd</li>
         </ul>
       </div>
 
