@@ -4,7 +4,7 @@ export function FocusCardsDemo() {
     const cards = [
         {
             title: "Web Development",
-            src: "/Domain/img2.jpeg",
+            src: "/Domain/img2.jpg",
             href: "/projects/WebDev", // Ensure this is the correct path
         },
         {
@@ -14,22 +14,22 @@ export function FocusCardsDemo() {
         },
         {
             title: "Machine Learning",
-            src: "/Domain/img4.png",
+            src: "/Domain/img4.jpg",
             href: "/projects/MachineL", // Change to an appropriate route
         },
         {
             title: "VLSI",
-            src: "/Domain/img5.png",
+            src: "/Domain/img5.jpg",
             href: "/projects/Vlsi", // Ensure this is the correct path
         },
         {
             title: "Robotics",
-            src: "/Domain/img6.png",
+            src: "/Domain/img6.jpg",
             href: "/projects/Robotics", // Change to an appropriate route
         },
         {
             title: "Internet of Things",
-            src: "/Domain/img7.jpg",
+            src: "/Domain/img1.jpg",
             href: "/projects/IOT", // Change to an appropriate route
         },
     ];
