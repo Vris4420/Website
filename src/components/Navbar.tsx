@@ -63,6 +63,19 @@ export default function Navbar() {
                                     : "PROJECTS"}
                             </div>
                         </Link>
+                        <Link href="/gallery">
+                            <div
+                                className={
+                                    pathname === "/gallery"
+                                        ? ""
+                                        : "text-gray-400"
+                                }
+                            >
+                                {pathname === "/gallery"
+                                    ? "GALLERY"
+                                    : "GALLERY"}
+                            </div>
+                        </Link>
 
                         <Link href="/about">
                             <div
